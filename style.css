@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-image: url("./bg-image.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 3rem;
+    color: black;
+    background-color: beige;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+.container #clock{
+    background-color: white;
+    width: 30vw;
+    text-align: center;
+}
+.container #clock span{
+    color: black;
+    font-size: 4rem;
+    margin-left:  5px;
+}
+
+@media (max-width: 662px)  {
+    .container #clock span{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 450px)  {
+    .container #clock span{
+        font-size: 1.5rem;
+    }
+    .container h1{
+        font-size: 2rem;
+        color: black;
+        background-color: beige;
+        padding: 25px 30px;
+        margin-bottom: 20px;
+    }
+}
